@@ -16,7 +16,7 @@
  limitations under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -30,9 +30,9 @@
 
   <name>nutch-core</name>
   <description>Nutch is an open source web-search software.
-        It builds on Hadoop, Tika and Solr, adding web-specifics,
-        such as a crawler, a link-graph database etc.
-    </description>
+    It builds on Hadoop, Tika and Solr, adding web-specifics,
+    such as a crawler, a link-graph database etc.
+  </description>
   <url>http://nutch.apache.org</url>
   <licenses>
     <license>
@@ -108,32 +108,18 @@
       <email>thammegowda@apache.org</email>
     </developer>
   </developers>
-
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <slf4j.version>1.6.1</slf4j.version>
-    <junit.version>4.12</junit.version>
-    <hadoop.version>2.7.2</hadoop.version>
-    <cxf.version>3.0.4</cxf.version>
-    <jackson.version>2.5.1</jackson.version>
-    <jetty.version>6.1.22</jetty.version>
     <dir.root>${project.parent.basedir}</dir.root>
-    <libs.dir>${dir.local}${file.separator}lib</libs.dir>
-    <maven-surefire-plugin.argLine>-Xmx4096m -XX:MaxPermSize=768m -XX:+HeapDumpOnOutOfMemoryError</maven-surefire-plugin.argLine>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>${slf4j.version}</version>
-      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
-      <version>${slf4j.version}</version>
-      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>commons-lang</groupId>

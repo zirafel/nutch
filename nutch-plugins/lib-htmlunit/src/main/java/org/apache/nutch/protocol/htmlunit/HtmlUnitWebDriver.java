@@ -178,7 +178,7 @@ public class HtmlUnitWebDriver extends HtmlUnitDriver {
         }
         InputStream is = new BufferedInputStream(new FileInputStream(srcFile));
         IOUtils.copyBytes(is, os, conf);
-        LOG.debug("Screenshot for {} successfully saved to: {} {}", url, screenshotPath, srcFile.getName()); 
+        LOG.debug("Screenshot for " + url + " successfully saved to: {} {}", screenshotPath, srcFile.getName());
       } else {
         LOG.warn("Screenshot for {} not saved to HDFS (subsequently disgarded) as value for "
             + "'screenshot.location' is absent from nutch-site.xml.", url);

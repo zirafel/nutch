@@ -36,10 +36,25 @@
     </properties>
 
     <dependencies>
+        <!--Nutch dependencies -->
+        <dependency>
+            <groupId>org.apache.nutch</groupId>
+            <artifactId>nutch-core</artifactId>
+        </dependency>
         <dependency>
             <groupId>rome</groupId>
             <artifactId>rome</artifactId>
-            <version>1.0</version>
+        </dependency>
+        <!-- test dependencies -->
+        <dependency>
+            <groupId>org.apache.nutch</groupId>
+            <artifactId>nutch-core</artifactId>
+            <scope>test</scope>
+            <type>test-jar</type>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
 </project>

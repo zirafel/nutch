@@ -34,5 +34,18 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+        <!--Nutch dependencies -->
+        <dependency>
+            <groupId>org.apache.nutch</groupId>
+            <artifactId>nutch-core</artifactId>
+        </dependency>
+        <!-- test dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
+
 
 </project>

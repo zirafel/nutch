@@ -25,28 +25,29 @@
         <version>1.13-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>publish-rabitmq</artifactId>
+    <artifactId>publish-rabbitmq</artifactId>
     <packaging>jar</packaging>
 
-    <name>publish-rabitmq</name>
+    <name>publish-rabbitmq</name>
     <url>http://nutch.apache.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <rabitmq.version>3.6.5</rabitmq.version>
-        <jackson.version>2.8.6</jackson.version>
     </properties>
 
     <dependencies>
+        <!--Nutch dependencies -->
+        <dependency>
+            <groupId>org.apache.nutch</groupId>
+            <artifactId>nutch-core</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>
-            <version>${rabitmq.version}</version>
         </dependency>
     </dependencies>
 </project>

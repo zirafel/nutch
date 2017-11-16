@@ -36,10 +36,14 @@
     </properties>
 
     <dependencies>
+        <!--Nutch dependencies -->
+        <dependency>
+            <groupId>org.apache.nutch</groupId>
+            <artifactId>nutch-core</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.apache.nutch</groupId>
             <artifactId>urlfilter-regex</artifactId>
-            <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
 </project>

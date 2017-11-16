@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.nutch.protocol.interactiveselenium;
+package org.apache.nutch.protocol.interactiveselenium.handlers;
 
 import java.lang.invoke.MethodHandles;
 
@@ -30,7 +30,7 @@ import org.slf4j.LoggerFactory;
  * done multiple interactions and accumulated data you can in the end append that to the driver.  
  */
 public class DefalultMultiInteractionHandler implements
-    InteractiveSeleniumHandler {
+        org.apache.nutch.protocol.interactiveselenium.handlers.InteractiveSeleniumHandler {
   private static final Logger LOG = LoggerFactory
       .getLogger(MethodHandles.lookup().lookupClass());
 

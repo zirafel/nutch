@@ -36,15 +36,23 @@
     </properties>
 
     <dependencies>
+        <!--Nutch dependencies -->
         <dependency>
             <groupId>org.apache.nutch</groupId>
-            <artifactId>lib-htmlunit</artifactId>
-            <version>${project.parent.version}</version>
+            <artifactId>nutch-core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.nutch</groupId>
             <artifactId>lib-http</artifactId>
-            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.nutch</groupId>
+            <artifactId>lib-htmlunit</artifactId>
+        </dependency>
+        <!-- test dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
 
